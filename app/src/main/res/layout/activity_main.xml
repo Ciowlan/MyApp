@@ -11,27 +11,36 @@
         android:id="@+id/tv"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="0"
+        android:gravity="center"
+        android:text="10"
 
         />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         tools:context=".MainActivity">
         <Button
         android:id="@+id/bt1"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="RESET" />
+        android:text="LAP"
+        android:onClick="lap"
+            />
 
 
         <Button
             android:id="@+id/bt2"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="START" />
+            android:text="START"
+            android:onClick="start"
+            />
     </LinearLayout>
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
